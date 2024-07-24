@@ -2,17 +2,20 @@
 * {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 16px;
+  --color-light : #d9d9d9;
+  --color-dark: #323232;
+  --color-mid: orange;
 }
 html {
   display: flex;
   justify-content: center;
   margin: 1em;
-  background-color: white;
+  background-color: var(--color-light);
 }
 body {
   width: 595px;
   height: 842px;
-  border: 2px solid black;
+  border: 2px solid var(--color-dark);
 }
 hr {
   align-self: center;
@@ -33,14 +36,14 @@ header {
   display: flex;
   justify-content: space-between;
   height: 20%;
-  background-color: black;
-  color: white;
+  background-color: var(--color-dark);
+  color: var(--color-light);
   padding: 0.5em;
 }
 img {
   width: 150px;
   align-self: center;
-  border: 1px black solid;
+  border: 1px var(--color-dark) solid;
   border-radius: 1em;
 }
 .header-wrapper {
@@ -54,7 +57,7 @@ h1 {
   flex-wrap: wrap;
   font-size: 36px;
   text-transform: uppercase;
-  color: orange;
+  color: var(--color-light);
 }
 .title-job,
 .title-detail {
@@ -70,7 +73,7 @@ h1 {
 .header-contact {
   font-size: 12px;
   font-style: italic;
-  border: 1px black solid;
+  border: 1px var(--color-dark) solid;
   border-radius: 1em;
   padding: 0.5em;
   display: flex;
@@ -96,7 +99,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0.75em;
-  border: 1px solid black;
+  border: 1px solid var(--color-dark);
   border-radius: 1em;
   padding: 0.5em;
 }
@@ -110,8 +113,8 @@ main {
   display: flex;
   justify-content: space-between;
   font-weight: lighter;
-  color: orange;
-  background-color: black;
+  color: var(--color-light);
+  background-color: var(--color-dark);
   border-radius: 0.25em;
   padding: 0.25em 0.5em;
 }
@@ -120,7 +123,7 @@ main {
   font-size: 0.75em;
   align-self: center;
   text-align: right;
-  color: white;
+  color: var(--color-light);
 }
 .experience-content {
   display: flex;
@@ -143,15 +146,16 @@ aside {
   flex-direction: column;
   justify-content: space-between;
   font-size: 14px;
+  color: var(--color-light)
 }
 aside div {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  border: 1px black solid;
+  border: 1px var(--color-dark) solid;
   border-radius: 1em;
   padding: 1em;
-  background-color: orange;
+  background-color: var(--color-dark);
 }
 aside h3 {
   text-decoration: underline;
